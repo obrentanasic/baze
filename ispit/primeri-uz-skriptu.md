@@ -118,16 +118,20 @@ SLUŠA[BRINDEKSA]  ⊆ STUDENT[BRINDEKSA]
 
 Na podacima:
 
-| PREDAJE | ŠIFN | ŠIFP |
-|---------|------|------|
-|         | N1   | P1   |
-|         | N1   | P2   |
-|         | N2   | P2   |
+**PREDAJE**
 
-| SLUŠA | ŠIFN | ŠIFP | BRINDEKSA |
-|-------|------|------|-----------|
-|       | N1   | P1   | 2021/0123 |
-|       | N2   | P2   | 2021/0123 |
+| ŠIFN | ŠIFP |
+|------|------|
+| N1   | P1   |
+| N1   | P2   |
+| N2   | P2   |
+
+**SLUŠA**
+
+| ŠIFN | ŠIFP | BRINDEKSA |
+|------|------|-----------|
+| N1   | P1   | 2021/0123 |
+| N2   | P2   | 2021/0123 |
 
 Torka `(N2, P1, 2021/0123)` se ne može uneti — para (N2, P1) nema u `PREDAJE`.
 
@@ -1141,7 +1145,7 @@ close(fd);
 - **Close** — prazni izmenjene bafere na disk, prenosi ažurirani TOS u STD, oslobađa bafere
   i briše zapis iz TOD. Dešava se i automatski, završetkom programa.
 
-**Zašto `Seek` pre `Write`:** `read` je pomerio pokazivač na kraj sloga (2200). Bez povratka
+**Zašto Seek mora pre Write.** `read` je pomerio pokazivač na kraj sloga (2200). Bez povratka
 na 2000, `write` bi upisao izmenjeni slog preko **12.** radnika.
 
 **Primeri načina otvaranja:**
