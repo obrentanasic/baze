@@ -34,11 +34,14 @@ Materijali za predmet Baze podataka — predavanja i pitanja za pripremu ispita.
 
 ## Priprema ispita
 
-[Pitanja i odgovori, grupisano po temama](ispit/Baze_podataka__pitanja_i_odgovori_grupisano_po_temama.pdf)
+| Materijal | Fajl |
+|-----------|------|
+| Pitanja i odgovori, grupisano po temama (45 pitanja, 7 celina) | [Baze_podataka__pitanja_i_odgovori_grupisano_po_temama.pdf](ispit/Baze_podataka__pitanja_i_odgovori_grupisano_po_temama.pdf) |
+| Primeri uz skriptu — dopuna za pitanja koja u skripti nemaju primer | [primeri-uz-skriptu.md](ispit/primeri-uz-skriptu.md) |
 
 ## Struktura
 
 ```
 predavanja/   slajdovi sa predavanja, numerisani redom obrade
-ispit/        pitanja i odgovori za pripremu ispita
+ispit/        pitanja i odgovori za pripremu ispita + primeri uz njih
 ```
